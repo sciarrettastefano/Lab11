@@ -46,7 +46,7 @@ class View(ft.UserControl):
         self._page.controls.append(self.txtOut)
 
         self._ddnode = ft.Dropdown(label="Product")
-        self.btn_search = ft.ElevatedButton(text="Cerca Percorso", on_click=self._controller.handle_search)
+        self.btn_search = ft.ElevatedButton(text="Cerca Percorso", on_click=self._controller.handle_search, disabled=True)
         row2 = ft.Row([self._ddnode, self.btn_search],
                       alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row2)
